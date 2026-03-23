@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Store - Panel de Administración</title>
+</head>
+<body>
+  <main>
+    <section>
+      <h2>Gestión de Productos</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="assets\burguer.jpg" alt="Hamburguesa clásica miniatura"></td>
+            <td>Hamburguesa Clásica</td>
+            <td>Hamburguesas</td>
+            <td>$2500</td>
+            <td>20</td>
+            <td>
+              <a href="#">Editar</a> /
+              <a href="#">Eliminar</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="assets\Pizza.jpg" alt="Pizza muzzarella miniatura"></td>
+            <td>Pizza de Muzzarella</td>
+            <td>Pizzas</td>
+            <td>$3200</td>
+            <td>15</td>
+            <td>
+              <a href="#">Editar</a> /
+              <a href="#">Eliminar</a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="assets\Coca.jpg" alt="Bebida cola miniatura"></td>
+            <td>Bebida Cola 1.5L</td>
+            <td>Bebidas</td>
+            <td>$1200</td>
+            <td>30</td>
+            <td>
+              <a href="#">Editar</a> /
+              <a href="#">Eliminar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Formulario de Agregar Producto Rápido -->
+    <section>
+      <h2>Agregar Producto Rápido</h2>
+
+      <details open>
+        <summary>Mostrar / Ocultar formulario</summary>
+
+        <form action="#" method="post">
+          <div>
+            <label for="nombre">Nombre del producto:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div>
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required min="0" step="0.01">
+          </div>
+
+          <div>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Seleccionar categoría</option>
+              <option value="hamburguesas">Hamburguesas</option>
+              <option value="pizzas">Pizzas</option>
+              <option value="bebidas">Bebidas</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="stock">Stock inicial:</label>
+            <input type="number" id="stock" name="stock" required min="0" step="1">
+          </div>
+
+          <button type="submit">Agregar producto</button>
+        </form>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <p>Panel de administración de Food Store - Uso interno</p>
+  </footer>
+</body>
+</html>
