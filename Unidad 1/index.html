@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Store - Catálogo</title>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Food Store</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a id="mis-pedidos" href="#mis-pedidos">Mis Pedidos</a></li>
+        <li><a id="carrito" href="#carrito">Carrito</a></li>
+        <li><a href="admin.html">Panel Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Barra lateral con categorías -->
+  <aside>
+    <h2>Categorías</h2>
+    <ul>
+      <li><a href="#hamburguesas">Hamburguesas</a></li>
+      <li><a href="#pizzas">Pizzas</a></li>
+      <li><a href="#bebidas">Bebidas</a></li>
+    </ul>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Buscador -->
+    <section>
+      <h2>Buscador de productos</h2>
+      <form action="#" method="get">
+        <label for="buscar">Buscar:</label>
+        <input type="search" id="buscar" name="q" placeholder="Buscar productos...">
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- Grilla de productos -->
+    <section aria-label="Listado de productos">
+      <h2>Productos destacados</h2>
+
+      <!-- Producto 1 -->
+      <article id="hamburguesas">
+        <img src="https://via.placeholder.com/150" alt="Hamburguesa clásica con queso">
+        <h3>Hamburguesa Clásica</h3>
+        <p>Deliciosa hamburguesa con queso, lechuga y tomate.</p>
+        <p>Precio: <strong>$2500</strong></p>
+        <button type="button">Agregar</button>
+      </article>
+
+      <!-- Producto 2 -->
+      <article id="pizzas">
+        <img src="https://via.placeholder.com/150" alt="Pizza muzzarella grande">
+        <h3>Pizza de Muzzarella</h3>
+        <p>Pizza grande con abundante queso muzzarella.</p>
+        <p>Precio: <strong>$3200</strong></p>
+        <button type="button">Agregar</button>
+      </article>
+
+      <!-- Producto 3 (opcional, para bebidas) -->
+      <article id="bebidas">
+        <img src="https://via.placeholder.com/150" alt="Bebida cola de 1,5 litros">
+        <h3>Bebida Cola 1.5L</h3>
+        <p>Refresco cola ideal para compartir.</p>
+        <p>Precio: <strong>$1200</strong></p>
+        <button type="button">Agregar</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Contacto: foodstore@example.com | Tel: (011) 1234-5678</p>
+    <p>Dirección: Calle Falsa 123, Ciudad</p>
+  </footer>
+</body>
+</html>
