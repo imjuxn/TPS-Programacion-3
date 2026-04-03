@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Catálogo</title>
+    <!-- Link de CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- Encabezado -->
+    <header>
+      <h1>🍔 Food Store</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#mis-pedidos">Mis Pedidos</a>
+        <a href="#carrito">Carrito</a>
+        <a href="admin.html">Panel Admin</a>
+      </nav>
+    </header>
+
+    <!-- Barra lateral -->
+    <aside>
+      <h2>Categorías</h2>
+      <ul id="lista-categorias"></ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+
+      <form>
+        <input type="text" placeholder="Buscar productos..." />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <h2>Productos Destacados</h2>
+ 
+      <section id="contenedor-productos"></section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>© 2074 Food Store. Los derechos de esta página no están reservados.</p>
+      <p>Contacto: syquis@example.com | Tel: (011) 1288-7878</p>
+    </footer>
+
+    <!-- Scripts: primero datos, luego lógica -->
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+
+  </body>
+</html>
