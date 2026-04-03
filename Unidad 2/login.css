@@ -1,0 +1,129 @@
+
+:root {
+  --color-primario: #ff6347;
+  --color-fondo: #f0f0f0;
+  --color-texto: #333;
+  --color-blanco: #fff;
+  --color-borde: #ddd;
+  --color-focus: #ff4500;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tarjeta {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 400px;
+}
+
+
+.titulo {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-primario);
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+
+.subtitulo {
+  text-align: center;
+  color: var(--color-texto);
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.campo label {
+  font-size: 14px;
+  color: var(--color-texto);
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+
+.campo input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--color-texto);
+  background-color: var(--color-blanco);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+
+.campo input:focus {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px rgba(255, 69, 0, 0.15);
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 6px;
+}
+
+.btn:hover {
+  background-color: var(--color-focus);
+}
+
+.registro {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--color-texto);
+}
+
+.registro a {
+  color: var(--color-primario);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registro a:hover {
+  text-decoration: underline;
+  color: var(--color-focus);
+}
