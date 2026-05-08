@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff6347, #ff4500);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contenedor {
+      text-align: center;
+      background: white;
+      padding: 60px 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #ff6347;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .botones {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    button {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 14px;
+    }
+
+    .btn-login {
+      background-color: #ff6347;
+      color: white;
+    }
+
+    .btn-login:hover {
+      background-color: #ff4500;
+    }
+
+    .btn-registro {
+      background-color: #f0f0f0;
+      color: #ff6347;
+      border: 2px solid #ff6347;
+    }
+
+    .btn-registro:hover {
+      background-color: #ff6347;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>🍔 Food Store</h1>
+    <p>
+      Bienvenido a Food Store, tu tienda de comida favorita.
+      Inicia sesión o crea una cuenta para comenzar.
+    </p>
+    <div class="botones">
+      <button class="btn-login" id="btn-login">Iniciar Sesión</button>
+      <button class="btn-registro" id="btn-registro">Registrarse</button>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
